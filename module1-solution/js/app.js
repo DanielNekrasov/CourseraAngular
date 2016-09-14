@@ -14,7 +14,7 @@ angular.module("LunchCheck",[])
       if ($scope.menu){
         var ArrayOfitems = $scope.menu.split(',');
         for (var i = 0; i<ArrayOfitems.length; i++){
-          if (ArrayOfitems[i]){
+          if (ArrayOfitems[i].trim()){
             NumberOfItems++;
           }
         };
