@@ -21,7 +21,6 @@
   function AlreadyBoughtShoppingController(ShoppingListCheckOffService){
     var bought = this;
     bought.list = ShoppingListCheckOffService.BoughtItems;
-
   };
 
 
