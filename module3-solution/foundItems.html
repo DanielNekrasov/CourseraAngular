@@ -1,5 +1,10 @@
-<ul class="row">
-  <li class="col-md-6" ng-repeat="item in list.items">
+<ul class="row list-group" >
+  <li class="list-group-item">
+    <span class="badge">{{list.items.length}}</span>
+    <div class="error" ng-if="list.items.length === 0"> Nothing found!</div>
+    number of items:
+ </li>
+  <li class="list-group-item" ng-repeat="item in list.items">
     <div>
       <h4>{{item.name}} ({{item.short_name}})</h4>
       <div> {{item.description}}</div>
@@ -7,4 +12,3 @@
     </div>
   </li>
 </ul>
-<div class="error" ng-if="list.items.length === 0"> Nothing found!</div>
