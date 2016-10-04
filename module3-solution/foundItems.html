@@ -1,7 +1,7 @@
 <ul class="row list-group" >
   <li class="list-group-item">
     <span class="badge">{{list.items.length}}</span>
-    <div class="error" ng-if="list.items.length === 0"> Nothing found!</div>
+
     number of items:
  </li>
   <li class="list-group-item" ng-repeat="item in list.items">
@@ -12,3 +12,4 @@
     </div>
   </li>
 </ul>
+<div class="error" ng-if="list.isAnythingFound()">Nothing found!</div>
