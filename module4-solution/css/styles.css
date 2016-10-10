@@ -1,0 +1,18 @@
+body{
+  width: 100%;
+  margin: 20px auto 0;
+}
+h1, h2, h3{
+  text-align: center;
+}
+[ui-sref]:hover {
+  cursor: pointer;
+  background-color: #822442;
+  color: #fff;
+}
+
+div.title{
+  background-color:#27956d;
+  color: #fff;
+  font-size: 1.2em;
+}

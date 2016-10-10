@@ -1,0 +1,9 @@
+<h3> Here are all items for that category</h3>
+<ul>
+  <li class="list-group-item" ng-repeat = "item in $ctrl.items">
+    <div class="title">{{item.name}} ({{item.short_name}})</div>
+    <div class="description">
+      {{item.description}}
+    </div>
+  </li>
+</ul>
